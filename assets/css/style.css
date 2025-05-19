@@ -1,69 +1,130 @@
-/* Basic reset */
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    font-family: "Ancizar Serif", serif;
 }
 
-/* Header Styling */
-header {
-    background-color: #4CAF50;
-    padding: 20px 0;
-    text-align: center;
+.hero{
+    height: 90vh;
+    background-image: url('../img/pexels-bardalacray-3172830.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-/* Navbar Default */
-#navbar {
-    width: 80%;
-    margin: 0 auto;
-    transition: all 0.3s ease;
+.overlay{
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
-/* Nav links */
-.nav-links {
-    list-style: none;
+.navigation{
+    position: absolute;
     display: flex;
-    justify-content: space-around;
+    width: 80%;
+    background-color: rgb(7, 146, 7);
+    color: azure;
+    left: 10%;
+    margin-top: 1.5rem;
+    height: 7rem;
+    justify-content: space-between;
+    z-index: 1;
 }
 
-.nav-links li a {
+.navigation .logo{
+    width: 10%;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.navigation .logo img{
+    width: 100%;
+    height: auto;
+}
+
+.navigation .nav_links{
+    margin-right: 3rem;
+}
+
+.navigation .nav_links ul{
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+    list-style: none;
+}
+
+.navigation .nav_links ul li a{
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: rgb(246, 246, 247);
     font-size: 1.2rem;
 }
 
-/* Fixed Navbar */
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 60%;
+    z-index: 1;
+}
+
+.banner h1{
+    color: rgb(7, 146, 7);
+    font-size: 3rem;
+}
+
+.motto{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 30%;
+    z-index: 1;
+}
+
+.motto h3{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.callToAction{
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    background: rgb(7, 146, 7);
+    padding: 1rem 2rem;
+    z-index: 1;
+}
+
+.callToAction a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.arrow{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    height: 5rem;
+    width: auto;
+    z-index: 1;
+}
+
+.arrow img{
+    height: 100%;
+    width: auto;
+    
+}
+
+.divider{
     width: 100%;
-    background-color: #333;
-    padding: 15px 0;
-    z-index: 1000;
+    background-color: rgb(7, 146, 7);
+    height: 2px;
+    margin-top: .5rem;
 }
 
-/* When fixed, update link color */
-.fixed .nav-links li a {
-    color: #fff;
-}
-
-/* Main Content */
-main {
-    margin-top: 50px;
-}
-
-.content {
+.objectives{
     height: 100vh;
-    padding: 40px;
-    background-color: #f4f4f4;
-    border-bottom: 2px solid #ddd;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-    }
 }
